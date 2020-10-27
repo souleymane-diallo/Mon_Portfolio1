@@ -119,8 +119,9 @@ section .heading h2 {
     justify-content: space-between;
 }
 .heading p {
-    font-size: 1.3em;
+    font-size: 1.4em;
     padding-bottom: 10px;
+    line-height: 2;
 }
 
 
@@ -249,6 +250,7 @@ section .heading h2 {
 .thumbnail p {
     text-align: center;
     font-size: 1.4em;
+    line-height: 2;
     padding: 20px 0;
 }
 
@@ -280,7 +282,7 @@ footer .glyphicon:hover {
 
 .contacterMoi {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .nameFooter, .menuFooter {
     margin-top: 0;
