@@ -69,7 +69,7 @@
                 <div class="skills__container bd-grid">          
                     <div>
                         <h2 class="skills__subtitle">Compétences Professionnelles</h2>
-                        <p class="skills__text">Tout long de mon cursus j'ai acquis dans compétences dans ces différentes technologies.</p>
+                        <p class="skills__text">Tout au long de mon cursus j'ai acquis dans compétences dans ces différentes technologies.</p>
                         <div class="skills__data">
                             <div class="skills__names">
                                 <i class='bx bxl-html5 skills__icon'></i>
@@ -144,15 +144,46 @@
                 <h2 class="section-title">Projets</h2>
 
                 <div class="work__container bd-grid">
-                    <div class="work__img">
-                        <img src="img/clavier-projet.jpg" alt="">
+                    <div class="box box1">
+                        <div class="work__img">
+                            <img src="img/clavier-projet.jpg" alt="">
+                        </div>
+                        <div class="contentBx">
+                            <p>intégration d'un clavier virtuel en HTML/CSS, 
+                                en utlisation la disposition en grid layout
+                                et une partie effectuez en JAVASCRIPT pour ajouter de 
+                                l'interactivé avec les touches du clavier comme le clavier
+                                de son ordinateurs
+                            </p>
+                        </div>
                     </div>
-                    <div class="work__img">
-                        <img src="img/ex-machina-projet.jpg" alt="">
+                    <div class="box ">
+                        <div class="work__img">
+                            <img src="img/ex-machina-projet.jpg" alt="">
+                        </div>
+                        <div class="contentBx">
+        
+                            <p>intégration d'une photoshop en HTML/CSS, 
+                                en utlisation des balises sémantique et la disposition 
+                                en flex-blox
+                               
+                            </p>
+                        </div>
                     </div>
-                    <div class="work__img">
-                        <img src="img/dev-web.jpg" alt="">
+                    <div class="box box3">
+                        <div class="work__img">
+                            <img src="img/dev-web.jpg" alt="">
+                        </div>
+                        <div class="contentBx">
+                            <p>intégration d'actualité en HTML/CSS, 
+                                en utlisation le fremawork Bootstrap
+                                et une partie effectuez en JAVASCRIPT pour ajouter de 
+                                l'interactivé avec des API
+                               
+                            </p>
+                        </div>
                     </div>
+                    
                    
                 </div>
             </section>
@@ -170,21 +201,32 @@
             </div>
             <p>&#169; Souleymane Diallo 2020</p>
         </footer>
+       
+
         <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="/__/firebase/8.1.2/firebase-app.js"></script>
+        <script src="/__/firebase/8.1.2/firebase-app.js"></script>
 
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
 
-<!-- Initialize Firebase -->
-<script src="/__/firebase/init.js"></script>
+        <!-- Initialize Firebase -->
+        <script src="/__/firebase/init.js"></script>
 
         <!--===== SCROLL REVEAL =====-->
         <script src="https://unpkg.com/scrollreveal"></script>
 
         <!--===== MAIN JS =====-->
         <script src="main.js"></script>
-        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script type="text/javascript" src="vanilla-tilt.js"></script>
+        <script type="text/javascript">
+            VanillaTilt.init(document.querySelector(".box"), {
+                max: 25,
+                speed: 400
+            });
+            
+            VanillaTilt.init(document.querySelectorAll(".box"));
+        </script>
+        
 
  
 </body>
