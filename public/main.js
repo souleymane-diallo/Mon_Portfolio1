@@ -55,6 +55,28 @@ sr.reveal('.work__img',{interval: 200});
 
 /*SCROLL CONTACT*/
 // sr.reveal('.contact__input',{interval: 200}); 
+//Animer le texte de bienvenue
+const txtAnim = document.querySelector('h1');
+
+new Typewriter(txtAnim, {
+    loop: true,
+    deleteSpeed: 20
+})
+.changeDelay(20)
+.typeString('<span style="color: red";>Souleymane DIALLO</span>')
+.pauseFor(300)
+.typeString('<strong style="color: red";>, Dev Front-End</strong> !')
+.pauseFor(1000)
+.deleteChars(15)
+.typeString('<span style="color: #27ae60">HTML5/CSS3</span> !')
+.pauseFor(1000)
+.deleteChars(12)
+.typeString('<span style="color: #ff6910;"> JavaScript</span> !')
+.pauseFor(1000)
+.deleteChars(12)
+.typeString('<span style="color: #5c8096b4 "> React</span> !')
+.start() 
+
 
 
 
